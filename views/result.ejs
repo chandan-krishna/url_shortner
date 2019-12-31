@@ -1,0 +1,29 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center">
+      <h1><i class="fab fa-node-js fa-3x"></i></h1>
+      <h3>Short Url</h3>
+      <input id="ShortUrl" value=<%= url.shortUrl %> />
+      <button onClick="copyUrl()" class="btn btn-primary btn-block">
+        Copy Url
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function copyUrl() {
+    var copyText = document.getElementById("ShortUrl");
+    console.log(copyText.value);
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  }
+</script>
