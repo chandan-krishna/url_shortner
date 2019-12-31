@@ -2,7 +2,20 @@
   <div class="col-md-6 m-auto">
     <div class="card card-body text-center">
       <h1><i class="fab fa-node-js fa-3x"></i></h1>
-      Welcome
+      <form action="/api/url/shorten" method="POST">
+        <div class="form-group">
+          <label for="longUrl">URL</label>
+          <input
+            type="text"
+            id="longUrl"
+            name="longUrl"
+            class="form-control"
+            placeholder="Enter URL"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
     </div>
   </div>
 </div>

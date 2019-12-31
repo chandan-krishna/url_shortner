@@ -25,6 +25,8 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "mongoose": "^5.8.3"
+    "mongoose": "^5.8.3",
+    "shortid": "^2.2.15",
+    "valid-url": "^1.0.9"
   }
 }

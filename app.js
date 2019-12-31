@@ -14,6 +14,7 @@ app.set("view engine", "ejs");
 
 // Routes
 app.use("/", require("./routes/index.js"));
+app.use("/api/url", require("./routes/url"));
 
 const PORT = process.env.PORT || 8000;
 app.listen(
